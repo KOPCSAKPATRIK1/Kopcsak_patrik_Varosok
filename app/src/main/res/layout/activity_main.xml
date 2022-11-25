@@ -15,7 +15,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lista"
+            android:text="Listazas"
             android:id="@+id/listButton"
             tools:ignore="HardcodedText" />
 
@@ -23,7 +23,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Új"
+            android:text="Új felvetele"
             android:id="@+id/insertButton"
             tools:ignore="HardcodedText" />
 
