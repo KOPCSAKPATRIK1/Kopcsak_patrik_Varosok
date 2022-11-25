@@ -6,26 +6,19 @@ import com.google.gson.annotations.Expose;
 
 public class City {
     private int id;
-    @Expose
     private String name;
-    @Expose
     private String country;
-    @Expose
     private int population;
 
-    public City(int id, String name, String email, int age) {
+    public City(int id, String name, String country, int population) {
         this.id = id;
         this.name = name;
-        this.country = email;
-        this.population = age;
+        this.country = country;
+        this.population = population;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -52,9 +45,6 @@ public class City {
         this.population = population;
     }
 
-    public String getAgeText() {
-        return String.valueOf(this.population);
-    }
 
     public void setAgeText(String ageText) {
         if (ageText.equals("")) {
@@ -67,6 +57,6 @@ public class City {
     @SuppressLint("DefaultLocale")
     @Override
     public String toString() {
-        return String.format("%s %s (%d)", this.name, this.country, this.population);
+        return String.format("nev: %s \norszag: %s \nlakossag: %d\n\n", this.name, this.country, this.population);
     }
 }
